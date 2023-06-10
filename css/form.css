@@ -1,0 +1,78 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+.wrapper-content{
+    width:400px;
+    height: 25rem;
+    background-color: #fff;
+    margin:  10rem auto;
+    position: relative;
+}
+.wrapper-content form{
+    width:100%;
+    height: 100%;
+    padding: 1rem;
+}
+.wrapper-content form input{
+    width: 100%;
+    height: 9%;
+    /* margin-bottom: 2rem; */
+    margin: 0.8rem 0;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    border-bottom:2px solid black;
+}
+.wrapper-content form input::placeholder{
+    color: #bbb;
+}
+.wrapper-content form input[type="submit"]{
+    background-color: green;
+    color:#fff ;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.close-wrapper{
+    position: absolute;
+    right: 1rem;
+    top:1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+
+}
+input+p{
+    display: none;
+}
+.success{
+    border-bottom: 3px solid green !important;
+}
+.failure{
+    border-bottom: 3px solid red !important;
+}
+.failure+p{
+    display: block;
+    color:red;
+}
+.captcha-box{
+    width: 50%;
+    height: 4rem;
+    border: 1px solid black;
+    display: flex;
+}
+.captcha-text{
+    width: 80%;
+}
+.captcha-reloded-icon{
+    width: 20%;
+}.captcha-reloded-icon img{
+    width: 100%;
+    height: 100%;
+}
